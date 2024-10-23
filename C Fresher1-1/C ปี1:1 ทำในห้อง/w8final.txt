@@ -1,0 +1,46 @@
+start
+	read gender, weight, service
+	if (gender == ‘m’ || gender == ‘M’)
+		genderFull = “Male”
+		if (weight > 80)
+			discount = service * 0.5
+			pay = service - discount
+			print genderFull
+			print discount
+			print pay
+		else if (weight >= 10 && weight <= 80)
+			discount = service * 0.25
+			pay = service - discount
+			print genderFull
+			print discount
+			print pay
+		      else
+				print "Not in the conditions!"
+		     end
+		end
+	else if (gender == 'f' || gender == 'F')
+		genderFull = "Female"
+		if (weight > 60)
+			discount = service * 0.75
+			pay = service - discount
+			print genderFull
+			print discount
+			print pay
+		else if (weight >= 10 && weight <= 60)
+			discount = service * 0.45
+			pay = service - discount
+			print genderFull
+			print discount
+			print pay
+		     else
+			print "Not in the conditions!"
+		     end
+		end
+	      else
+		print "Gender Invalid"
+	      end
+	end
+stop
+
+
+

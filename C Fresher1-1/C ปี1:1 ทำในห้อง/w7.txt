@@ -1,0 +1,18 @@
+Start
+	read money;
+	if (money < 100000)
+		bonus = “No Bonus”
+	else if (money >= 100000 && money <= 300000)
+		bonus = “No Bonus”
+			 else if (money >= 3000001 && money <= 500000)
+			 		bonus = "Gold 1B"
+						else if (money >= 5000001 && money <= 1000000)
+								bonus = "Gold 2B"
+								 else
+								 			bonus = "Nissan March"
+								 end
+						end
+			 end
+	end
+	print (money, commistion, bonus)
+stop

@@ -1,0 +1,14 @@
+start
+	read n
+	i = 1
+	sum = 0
+	
+	while (i <= n)
+		read x
+		sum = sum + x
+		i = i + 1
+	end
+	
+	avg = sum / n
+	print sum, avg
+stop

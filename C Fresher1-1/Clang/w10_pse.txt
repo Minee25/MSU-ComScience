@@ -1,0 +1,16 @@
+start
+  read n
+  i = 1
+
+  while (i <= n)
+    read grade, credit
+
+    gradeXcredit = grade * credit;
+    sumCredit = sumCredit + credit;
+    sumGradeXcredit = sumGradeXcredit + gradeXcredit;
+  end
+
+  gradeAvg = sumGradeXcredit / sumCredit;
+
+  print gradeAvg
+stop

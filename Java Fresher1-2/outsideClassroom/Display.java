@@ -1,4 +1,3 @@
-package เรียนนอกห้อง;
 class Display {
   public static void main(String[] args) {
     byte num1 = 127;

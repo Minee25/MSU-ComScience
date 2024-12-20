@@ -21,7 +21,6 @@ public class findEmail {
     String text = input.nextLine();
 
     System.out.println(findEmaile(text));
-
   }
 
   // Method
@@ -64,5 +63,5 @@ public class findEmail {
     } else {
       return "Email not found!";
     }
-  }
+  } 
 }

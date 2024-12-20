@@ -63,7 +63,7 @@ public class Ex10 {
         System.out.println("Not found day");
         break;
     }
-    
-    input.locale();
+
+    input.close();
   }
 }

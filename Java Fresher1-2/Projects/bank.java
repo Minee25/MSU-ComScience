@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -33,14 +32,13 @@ public class bank {
 
     while (true) {
       System.out.print(">> ");
-      String userInput = input.nextLine(); 
+      String userInput = input.nextLine();
       userInput.trim();
-      userInput.toLowerCase(); 
+      userInput.toLowerCase();
 
       if (userInput.isEmpty() || userInput == "check") {
-        System.out.println("กรุณาพิมพ์ด้วย"); 
-      }
-      else if (userInput.equals("checkall") || userInput.equals("5")) {
+        System.out.println("กรุณาพิมพ์ด้วย");
+      } else if (userInput.equals("checkall") || userInput.equals("5")) {
         System.out.println("Check All");
         System.out.println("Bank: " + bank);
         System.out.println("Money: " + money);

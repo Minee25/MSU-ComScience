@@ -17,7 +17,11 @@ class Minee {
     return 3.141592653589793 * (radius * radius);
   }
 
-  // public static double[] sortByZtoA(int[] arr) {
-  //   return Arrays.sort(arr, Collections.reverseOrder());
-  // }
+  public static double[] sortByZtoA(int[] arr) {
+    Arrays.sort(arr, Collections.reverseOrder());
+        System.out.println("เรียงลำดับจากมากไปน้อย:");
+        for (int num : arr) {
+            System.out.print(num + "\t");
+        }
+  }
 }

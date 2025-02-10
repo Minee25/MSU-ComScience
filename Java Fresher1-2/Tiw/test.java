@@ -1,24 +1,13 @@
 import java.util.Arrays;
-import java.util.Collections; 
+import java.util.Collections;
 
-public class test {
-    public static void main(String[] args) {
-        // ประกาศอาร์เรย์
-        Integer nums[] = {1, 5, 3, 7, 4, 7, 3, 4, 78, 8};
-
-        // เรียงลำดับจากน้อยไปมาก
-        Arrays.sort(nums);
-        System.out.println("เรียงลำดับจากน้อยไปมาก:");
-        for (int num : nums) {
-            System.out.print(num + "\t");
-        }
-        System.out.println();
-
-        // เรียงลำดับจากมากไปน้อย
-        Arrays.sort(nums, Collections.reverseOrder());
-        System.out.println("เรียงลำดับจากมากไปน้อย:");
-        for (int num : nums) {
-            System.out.print(num + "\t");
-        }
-    }
+public class test {public static void main(String[] args) {
+  String text = "ข้าวกล่อง35, น้ำปั่น30, ไก่ป็อป20, ขนมจีบ20, กระเพราไข่ดาว30";
+   
+  String[] words = text.split(", "); 
+  int count = words.length;
+  for (int i = 0; i < words.length; i++) {
+    System.out.print(words[i] + " ");
+  }
+}
 }

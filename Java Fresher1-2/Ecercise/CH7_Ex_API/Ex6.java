@@ -1,21 +1,93 @@
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Ex6 {
   public static void main(String[] args) {
-    // สร้าง Calendar instance เพื่อดึงวันที่และเวลา
-    Calendar calendar = Calendar.getInstance();
+    Ex6 obj = new Ex6();
 
-    // กำหนดรูปแบบวันที่
-    SimpleDateFormat dateFormat = new SimpleDateFormat("d : EEEE : MMMM : yyyy");
-    SimpleDateFormat timeFormat = new SimpleDateFormat("H : mm : ss");
+    int dayOfYear = obj.dayOfYear();
+    int dayOfWeek = obj.dayOfWeek();
+    int dayOfMonth = obj.dayOfMonth();
+    String nameDayOfWeek = obj.nameDayOfWeek();
+    String nameMonth = obj.nameMonth();
+    int timeHour = obj.timeHour();
+    int timeMinute = obj.timeMinute();
+    int timeSecond = obj.timeSecond();  
 
-    // แสดงผลลัพธ์
-    System.out.println(dateFormat.format(calendar.getTime())); // วันที่ : ชื่อวัน : ชื่อเดือน : ปี
-    System.out.println(
-        calendar.get(Calendar.DAY_OF_WEEK_IN_MONTH) + " : " +
-        (calendar.get(Calendar.DAY_OF_MONTH) + 1) + " : " + 
-        calendar.get(Calendar.DAY_OF_YEAR));
-    System.out.println(timeFormat.format(calendar.getTime())); // ชั่วโมง (0-23) : นาที : วินาที
+    obj.display1(dayOfMonth, nameDayOfWeek, nameMonth, dayOfYear);
+    obj.display2(dayOfWeek, dayOfMonth, dayOfYear);
+    obj.display3(timeHour, timeMinute, timeSecond);
+  }
+
+  void display1(int day, String nameDayOfWeek, String nameMonth, int year) {
+    System.out.print(day + " : " + nameDayOfWeek + " : " + nameMonth + " : " + year + "\n");
+  }
+
+  void display2(int dayOfWeek, int dayOfMonth, int dayOfYear) {
+    System.out.print(dayOfWeek + " : " + dayOfMonth + " : " + dayOfYear + "\n");
+  }
+
+  void display3(int hour, int minute, int second) {
+    System.out.print(hour + " : " + minute + " : " + second + "\n");
+  }
+
+  int day() {
+    LocalDate date = LocalDate.now();
+    int day = date.getDayOfMonth();
+    return day;
+  }
+
+  int year() {
+    LocalDate date = LocalDate.now();
+    int year = date.getYear();
+    return year;
+  }
+
+  String nameDayOfWeek() {
+    LocalDate date = LocalDate.now();
+    String nameDayOfWeek = date.getDayOfWeek().toString();
+    return nameDayOfWeek;
+  }
+
+  String nameMonth() {
+    LocalDate date = LocalDate.now();
+    String nameMonth = date.getMonth().toString();
+    return nameMonth;
+  }
+
+  int dayOfWeek() {
+    LocalDate date = LocalDate.now();
+    int dayOfWeek = date.getDayOfWeek().getValue();
+    return dayOfWeek;
+  }
+
+  int dayOfMonth() {
+    LocalDate date = LocalDate.now();
+    int dayOfMonth = date.getDayOfMonth();
+    return dayOfMonth;
+  }
+
+  int dayOfYear() {
+    LocalDate date = LocalDate.now();
+    int dayOfYear = date.getDayOfYear();
+    return dayOfYear;
+  }
+
+  int timeHour() {
+    LocalDateTime date = LocalDateTime.now();
+    int timeHour = date.getHour();
+    return timeHour;
+  }
+
+  int timeMinute() {
+    LocalDateTime date = LocalDateTime.now();
+    int timeMinute = date.getMinute();
+    return timeMinute;
+  }
+
+  int timeSecond() {
+    LocalDateTime date = LocalDateTime.now();
+    int timeSecond = date.getSecond();
+    return timeSecond;
   }
 }

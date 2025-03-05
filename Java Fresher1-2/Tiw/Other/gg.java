@@ -1,31 +1,8 @@
 public class gg {
   public static void main(String[] args) {
-    Minee.println("SDFDSF"); 
-     
+    Minee.println("SDFDSF");
+    Minee.print("SDFSDF");
   }
-  {                       
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   static class Minee {
     static void println(String msg) {
@@ -34,6 +11,6 @@ public class gg {
 
     static void print(String msg) {
       System.out.print(msg);
-    } 
+    }
   }
 }

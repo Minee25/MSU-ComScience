@@ -1,6 +1,18 @@
-const text = "Minee";
-setInterval(() => {  
-  if (document.title !== text) {
-    document.title = text;
+const gg = [
+  {
+    id: 1,
+    name: "Minee",
+    phone: "099"
+  },
+  {
+    id: 2,
+    name: "Master",
+    phone: "088"
   }
-}, 1000);
+]
+
+try {
+  
+} catch (error) {
+  console.log(error);
+}

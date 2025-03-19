@@ -1,0 +1,12 @@
+CODE	Firstname	Lastname	Midterm	Final	Score	Grade
+1	1	1	1	1	2	F
+1	2	2	2	2	4	F
+2	3	3	3	3	6	F
+3	4	4	4	4	8	F
+5	5	5	5	5	10	F
+5	5	0	0	0	0	F
+CODE	Firstname	Lastname	Midterm	Final	Score	Grade
+1	1	1	1	2	3	F
+2	2	23	3	3	6	F
+3	4	4	4	4	8	F
+5	5	5	5	0	5	F

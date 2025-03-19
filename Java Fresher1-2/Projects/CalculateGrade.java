@@ -1,5 +1,5 @@
-import java.io.*;
 import java.util.Scanner;
+import java.io.File;
 import java.io.PrintWriter;
 
 public class CalculateGrade {
@@ -11,7 +11,6 @@ public class CalculateGrade {
       String grade = "";
       while (input.hasNext()) {
         nisit = input.nextLine();
-        // System.out.println(nisit);
         int pos = nisit.indexOf(" ");
         String score = nisit.substring(pos, nisit.length());
         score = score.trim();
@@ -34,7 +33,7 @@ public class CalculateGrade {
         } else if (scoreInt < 50) {
           grade = "F";
         }
-        System.out.println(nisit + " " + grade); 
+        System.out.println(nisit + " " + grade);
       }
     } catch (Exception err) {
       System.out.println(err);

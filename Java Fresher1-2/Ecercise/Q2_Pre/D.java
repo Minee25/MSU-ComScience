@@ -35,7 +35,7 @@ public class D {
       for (int i = 0; i < dataSplit.length; i++) {
         String dataArr = dataSplit[i];
         for (int j = 0; j < dataArr.length(); j += 2) {
-          text += (char) Integer.parseInt(dataArr.substring(j, j + 2));
+          text += (char) Integer.parseInt(dataArr.substring(i, j + 2));
         }
         text += " ";
       }

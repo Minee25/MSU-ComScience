@@ -1,10 +1,10 @@
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
-public class Ex3 {
+public class Ex4 {
   public static void main(String[] args) {
-    Ex3 obj = new Ex3();
-    ArrayList<String> data = new ArrayList<String>();
+    Ex4 obj = new Ex4();
+    Vector<String> data = new Vector<String>();
 
     while (true) {
       obj.showMenu();
@@ -73,25 +73,25 @@ public class Ex3 {
     System.out.println(output.toString());
   }
 
-  void addFirst(ArrayList<String> data, String addData) {
+  void addFirst(Vector<String> data, String addData) {
     data.addFirst(addData);
   }
 
-  void addLast(ArrayList<String> data, String addData) {
+  void addLast(Vector<String> data, String addData) {
     data.addLast(addData);
   }
 
-  void addBefore(ArrayList<String> data, String addData, String addBeforeAt) {
+  void addBefore(Vector<String> data, String addData, String addBeforeAt) {
     int indexAt = data.indexOf(addBeforeAt);
     data.add(indexAt, addData);
   }
 
-  void addAfter(ArrayList<String> data, String addData, String addAfterAt) {
+  void addAfter(Vector<String> data, String addData, String addAfterAt) {
     int indexAt = data.indexOf(addAfterAt);
     data.add(indexAt + 1, addData);
   }
 
-  void deleteData(ArrayList<String> data, String deleteData) {
+  void deleteData(Vector<String> data, String deleteData) {
     if (data.contains(deleteData)) {
       data.remove(deleteData);
     } else {
@@ -99,7 +99,7 @@ public class Ex3 {
     }
   }
 
-  void editData(ArrayList<String> data, String editData, String editAt) {
+  void editData(Vector<String> data, String editData, String editAt) {
     if (data.contains(editAt)) {
       data.set(data.indexOf(editAt), editData);
     } else {
@@ -107,7 +107,7 @@ public class Ex3 {
     }
   }
 
-  void searchData(ArrayList<String> data, String searchData) {
+  void searchData(Vector<String> data, String searchData) {
     int amount = 0;
     for (int i = 0; i < data.size(); i++) {
       if (data.get(i).contains(searchData)) {
@@ -115,8 +115,7 @@ public class Ex3 {
       }
     }
 
-    // long amount = data.stream().filter(item ->
-    // item.contains(searchData)).count();
+    // long amount = data.stream().filter(item -> item.contains(searchData)).count();
 
     if (amount != 0) {
       System.out.println("Search found: " + amount);

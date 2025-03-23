@@ -1,0 +1,10 @@
+9 Animals
+Hedgehog: 5
+Kangaroo: 2
+Dolphin: 3
+Elephant: 2
+Lion: 4
+Wolf: 7
+Tiger: 6
+Gorilla: 4
+Giraffe: 9

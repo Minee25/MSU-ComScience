@@ -1,38 +1,21 @@
-import java.util.Scanner;
+import java.util.HashMap;
 
 public class Testt {
   public static void main(String[] args) {
-    Testt opj = new Testt();
-    String input = opj.scan("input something : ");
-    String InToOut = opj.InputToOutput(input);
-    String OutToIn = opj.OutputToInput(input); 
-    opj.printMet("Output to Input : " + OutToIn);
-  }
+    HashMap<String, Integer> grade = new HashMap<String, Integer>();
+    grade.put("A", 2);
+    grade.put("B", 9);
+    grade.put("A", 5);
+    grade.put("D", 8);
+    grade.put("F", 7);
+    grade.put("C", 7);
+    grade.put("F", 5);
+    grade.put("B", 3);
+    grade.put("F", 8);
+    grade.put("A", 16);
 
-  String scan(String promt) {
-    Scanner sc = new Scanner(System.in);
-    System.out.print(promt);
-    return sc.nextLine();
-  }
-
-  String InputToOutput(String input) {
-    String result = "";
-    for (int i = 0; i < input.length(); i++) {
-      char ch = input.charAt(i);
-      if (ch == ' ') {
-        result += "+";
-      } else {
-        result += (int) ch;
-      }
-    }
-    return result;
-  }
-
-  String OutputToInput(String InToOut) {
-    return InToOut;
-  }
-
-  void printMet(String result) {
-    System.out.println(result);
+    grade.forEach((key, value) -> {
+      System.out.println(key + ": " + value);
+    });
   }
 }

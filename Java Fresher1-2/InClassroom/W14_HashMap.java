@@ -25,13 +25,6 @@ public class W14_HashMap {
 
     hmp.replace(5, "Mineeeeeeeeeeeeeeeeeee"); // แทนที่ key
 
-    // วิธีหา key hashmap
-    Set set = hmp.keySet(); 
-    System.out.println(set);
-    Iterator<Integer> itt = set.iterator();
-    while (itt.hasNext()) {
-      int x = itt.next();
-      System.out.println(hmp.get(x));
-    } 
+    // วิธีหา key hashmap 
   }
 }

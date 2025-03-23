@@ -1,0 +1,4 @@
+Upper Case: 9
+Lower Case: 81
+Digit: 15
+Line: 4

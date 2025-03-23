@@ -1,0 +1,11 @@
+ID Name Lastname Midterm Final SumScore Grade
+681 Jeera Phongpan 12 20 32 F
+682 Naree Sutthipong 30 35 65 C+
+683 Pira Jitkaew 18 25 43 F
+684 Kanya Chaitong 45 48 93 A
+685 Somkid Srisamran 40 44 84 A
+686 Narath Kittichai 27 33 60 C
+687 Risa Pathom 8 15 23 F
+688 Wanee Chawankul 22 30 52 D
+689 Tanakorn Teerathawut 48 50 98 A
+690 Punyaporn Sukthabhi 35 40 75 B+

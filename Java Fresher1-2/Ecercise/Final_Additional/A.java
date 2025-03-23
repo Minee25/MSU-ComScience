@@ -10,7 +10,7 @@ public class A {
     String fileName = "A_Input.txt";
     obj.readFileTextToASCII(fileName);
     System.out.println("Print Input Files:");
-    obj.readFile(fileName); 
+    obj.readFile(fileName);
     System.out.println("\nPrint Output Files:");
     obj.readFile("A_Output.txt");
   }

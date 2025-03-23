@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -6,7 +5,6 @@ public class W15_FileWriter {
   public static void main(String[] args) {
     String fileName = "W15_f16.txt";
     try {
-
       String txt = "";
       while (true) {
         int x = System.in.read();

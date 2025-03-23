@@ -1,0 +1,11 @@
+ID	Name	Lastname	Midterm	Final
+681	Jeera	Phongpan	12	20
+682	Naree	Sutthipong	30	35
+683	Pira	Jitkaew	18	25
+684	Kanya	Chaitong	45	48
+685	Somkid	Srisamran	40	44
+686	Narath	Kittichai	27	33
+687	Risa	Pathom	8	15
+688	Wanee	Chawankul	22	30
+689	Tanakorn	Teerathawut	48	50
+690	Punyaporn	Sukthabhi	35	40

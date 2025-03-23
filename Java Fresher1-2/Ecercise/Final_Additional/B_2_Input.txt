@@ -1,0 +1,5 @@
+Giraffe Lion Giraffe Tiger Wolf 
+Hedgehog Tiger Kangaroo Elephant Giraffe Gorilla Hedgehog 
+Giraffe Dolphin Wolf Dolphin Tiger Wolf Tiger Wolf Giraffe Gorilla Kangaroo Giraffe Gorilla 
+Giraffe Lion Tiger Hedgehog Tiger Gorilla Hedgehog Dolphin Wolf Lion
+Giraffe Elephant Lion Giraffe Wolf Hedgehog Wolf stop

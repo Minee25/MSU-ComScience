@@ -1,10 +1,9 @@
-public class Student {
+class Student {
   String name;
-  String id;
+  int id;
   Student classMate;
 
-  // Constructor
-  Student(String Name, String Id, Student ClassMate) {
+  Student(String Name, int Id, Student ClassMate) {
     name = Name;
     id = Id;
     classMate = ClassMate;

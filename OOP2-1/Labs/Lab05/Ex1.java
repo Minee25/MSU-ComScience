@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+public class Ex1 {
     public static void main(String[] args) {
         // Always run Swing code on the Event Dispatch Thread
         SwingUtilities.invokeLater(() -> new MyFrame());

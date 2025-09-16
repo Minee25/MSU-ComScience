@@ -1,7 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class Lab4 {
+public class Ex4 {
   public static void main(String[] args) {
     // Frame
     Frame frame = new Frame("Multiple Buttons");

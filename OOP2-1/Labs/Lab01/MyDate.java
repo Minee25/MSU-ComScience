@@ -1,10 +1,9 @@
 class MyDate {
-  // Attributes
   int day;
   int month;
   int year;
 
-  // Constructor
+  // Contructor
   MyDate() {
     day = 1;
     month = 1;
@@ -17,12 +16,11 @@ class MyDate {
     year = Year;
   }
 
-  // Method
   // Setter
   void setDay(int d) {
     if (d > 31) {
+      System.out.println("Error");
       day = 0;
-      System.out.println("Error in Day");
       return;
     }
     day = d;
@@ -30,8 +28,8 @@ class MyDate {
 
   void setMonth(int m) {
     if (m > 12) {
+      System.out.println("Error");
       month = 0;
-      System.out.println("Error in Month");
       return;
     }
     month = m;
@@ -55,6 +53,6 @@ class MyDate {
   }
 
   void print() {
-    System.out.println(getDay() + "/" + getMonth() + "/" + getYear());
+    System.out.println(getDay() + "/" + getMonth() + "/" + year);
   }
 }

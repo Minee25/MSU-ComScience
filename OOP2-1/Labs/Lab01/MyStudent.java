@@ -1,10 +1,10 @@
-public class MyStudent {
+class MyStudent {
   public static void main(String[] args) {
-    Student student1 = new Student("A", "100", null);
-    Student student2 = new Student("B", "101", student1);
-    student1.setClassMate(student2);
+    Student std1 = new Student("AAA", 100, null);
+    Student std2 = new Student("BBB", 101, std1);
+    std1.setClassMate(std2);
 
-    student1.print();
-    student2.print();
+    std1.print();
+    std2.print();
   }
 }

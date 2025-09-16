@@ -2,7 +2,7 @@ import java.awt.*;
 
 import javax.swing.JTextArea;
 
-public class Main {
+public class Ex2 {
   public static void main(String[] args) {
     Frame frame = new Frame("Multiple Buttons");
     frame.setSize(500, 400);

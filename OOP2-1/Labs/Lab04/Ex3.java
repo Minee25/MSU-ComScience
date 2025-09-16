@@ -2,8 +2,7 @@ import java.awt.*;
 import java.util.Random;
 import javax.swing.JButton;
 
-class Lab3 {
-
+class Ex3 {
   public static void main(String[] args) {
     Frame frame = new Frame("50 Button");
     Random rand = new Random();
@@ -15,7 +14,7 @@ class Lab3 {
       JButton btn = new JButton("" + i);
       int positionHight = rand.nextInt(500);
       int positionWidth = rand.nextInt(400);
-      
+
       Float r = rand.nextFloat();
       Float g = rand.nextFloat();
       Float b = rand.nextFloat();

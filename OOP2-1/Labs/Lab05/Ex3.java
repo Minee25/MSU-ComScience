@@ -19,7 +19,7 @@ class Windows extends JFrame {
 
   public Windows() {
     setTitle("Interactive colors");
-    setSize(512, 512);
+    setSize(1000, 1000);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLocationRelativeTo(null);
     setLayout(new BorderLayout());
